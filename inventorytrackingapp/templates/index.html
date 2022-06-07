@@ -1,0 +1,44 @@
+<html>
+ 
+<head>
+    <title>Inventory Tracking App</title>
+    <style>
+        .container {
+            margin-left: 550px;
+            margin-top: 150px;
+            width: 1000px;
+            height: 100px;
+            padding: 15px;
+        }
+    </style>
+</head>
+ 
+<body>
+    <p style="margin-left:550px;"><a href="retrieve">View Items</a></p>
+    <div class="container">
+        <table>
+            <tbody>
+                <form action="create" method="POST">
+          
+                    <tr>
+                        <td> Item Name</td>
+                        <td><input type="text" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td> Item Quantity</td>
+                        <td><input type="number" name="quantity" required></td>
+                    </tr>
+                    <tr>
+                        <td> Item Price($)</td>
+                        <td><input type="number" name='price' required></td>
+                    </tr>
+                    <tr>
+                        <td><button>Submit</button></td>
+                    </tr>
+                </form>
+            </tbody>
+        </table>
+    </div>
+</body>
+ 
+</html>
